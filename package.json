@@ -1,7 +1,7 @@
 {
-  "name": "gatsby-starter-hello-world",
+  "name": "Max Whitmore portfolio",
   "private": true,
-  "description": "A simplified bare-bones starter for Gatsby",
+  "description": "Portfolio built on Gatsby",
   "version": "0.1.0",
   "license": "MIT",
   "scripts": {

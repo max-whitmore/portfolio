@@ -23,6 +23,13 @@
 
   @include respond(phone) {
     padding: 0rem $default-font-size;
+
+    .hero-background {
+      display: none;
+    }
+    .hero-intro {
+      width: 100%;
+    }
   }
 
   .hero-title {
@@ -63,3 +70,22 @@
     }
   }
 }
+
+.hero-image-container {
+  width: 50%;
+}
+
+.hero-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero-intro {
+  width: 40%;
+}
+
+.hero-background {
+  width: 60%;
+}
+

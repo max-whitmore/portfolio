@@ -3,26 +3,25 @@ import { Container } from 'react-bootstrap';
 import { Link } from 'react-scroll';
 import PortfolioContext from '../../context/context';
 
-const Footer = () => {
+const Header = () => {
   const { footer } = useContext(PortfolioContext);
   const { networks } = footer;
 
   return (
-    <footer className="footer navbar-static-bottom">
+    <header className="header navbar-static-bottom" id="header">
       <Container>
-        <span className="back-to-top">
-          <Link to="header" smooth duration={1000}>
-            <i className="fa fa-angle-up fa-2x" aria-hidden="true" />
-          </Link>
-        </span>
-        <div className="social-links">
+        <div className="header-container">
+        <div className="brand">
+          Max Whitmore
+        </div>
+        <div className="header-social-links">
           {networks &&
             networks.map((network) => {
               const { id, name, url } = network;
               return (
                 <a
                   key={id}
-                  href={url || 'https://github.com/cobidev/gatsby-simplefolio'}
+                  href={url}
                   rel="noopener noreferrer"
                   target="_blank"
                   aria-label={name}
@@ -32,16 +31,10 @@ const Footer = () => {
               );
             })}
         </div>
-        <hr />
-        <p className="footer__text">
-          © {new Date().getFullYear()} - Made by{' '}
-          <a href="https://github.com/maaxw" target="_blank" rel="noopener noreferrer">
-            Max Whitmore
-          </a>
-        </p>
+        </div>
       </Container>
-    </footer>
+    </header>
   );
 };
 
-export default Footer;
+export default Header;

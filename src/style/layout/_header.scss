@@ -1,0 +1,86 @@
+.header {
+  background-image: linear-gradient(
+135deg
+, $primary-color 0%, $secondary-color 100%);
+  color: $dark-grey;
+
+  @include respond(phone) {
+    border: 0px;
+  }
+
+  &__text {
+    color: $dark-grey;
+    font-size: 1.3rem;
+
+    a {
+      color: $dark-grey;
+      font-size: 1.3rem;
+      transition: all 0.4s;
+      display: inline-block;
+      background-color: $dark-grey;
+
+      &:hover,
+      &:active {
+        color: $primary-color;
+        -webkit-box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+        box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+      }
+    }
+  }
+
+  & hr {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 0;
+    width: 50%;
+    border-top: 2px solid rgba(255, 255, 255, 0.1);
+  }
+}
+
+.header-social-links {
+  display: flex;
+  justify-content: flex-end;
+  flex: auto;
+
+  a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: $white-color;
+    font-size: 3rem;
+    width: 3rem;
+    height: 3rem;
+    margin: $default-font-size $default-font-size;
+    transition: all 0.2s ease-in;
+
+    &:hover {
+      transform: translateY(-2px);
+    }
+  }
+}
+
+.back-to-top i {
+  color: $white-color;
+  margin: 1rem 0 $default-font-size;
+  transition: all 0.2s ease-in;
+  cursor: pointer;
+
+  &:hover {
+    transform: translateY(-2px);
+  }
+}
+
+.brand {
+  display: flex;
+  justify-content: flex-start;
+  align-self: center;
+  font-size: 2rem;
+  font-weight: 700;
+  flex: auto;
+  color: $white-color;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+}
