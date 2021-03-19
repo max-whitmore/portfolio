@@ -5,6 +5,7 @@ import { Container, Row, Col } from 'react-bootstrap';
 import PortfolioContext from '../../context/context';
 import Title from '../Title/Title';
 import ProjectImg from '../Image/ProjectImg';
+import { Link } from "gatsby";
 
 const Projects = () => {
   const { projects } = useContext(PortfolioContext);
@@ -26,9 +27,9 @@ const Projects = () => {
     <section id="projects">
       <Container>
         <div className="project-wrapper">
-          <Title title="Projects" />
+          <Title title="Work & projects" />
           {projects.map((project) => {
-            const { title, info, info2, url, repo, img, id } = project;
+            const { title, dates, subheading, subheading2, info, info2, url, repo, img, id } = project;
 
             return (
               <Row key={id}>
@@ -42,13 +43,20 @@ const Projects = () => {
                   >
                     <div className="project-wrapper__text">
                       <h3 className="project-wrapper__text-title">{title || 'Project Title'}</h3>
-                      <div>
-                        <p>
-                          {info ||
-                            'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi neque, ipsa animi maiores repellendu distinctioaperiam earum dolor voluptatum consequatur blanditiis inventore debitis fuga numquam voluptate architecto itaque molestiae.'}
+                      <p className="project-wrapper__text-dates">{dates}</p>
+                      <div className="project-wrapper__text-block">
+                      <h4 className="project-wrapper__text-subheading">
+                        {subheading}
+                        </h4>
+                        <p className="project-wrapper__text-info">
+                          {info}
                         </p>
-                        <p className="mb-4">{info2 || ''}</p>
+                        <h4 className="project-wrapper__text-subheading">
+                        {subheading2}
+                        </h4>
+                        <p className="project-wrapper__text-info">{info2 || ''}</p>
                       </div>
+                      <Link to="/work/pearson-college-london" className="cta-btn cta-btn--hero">More info</Link>
                       <a
                         target="_blank"
                         rel="noopener noreferrer"
@@ -62,7 +70,7 @@ const Projects = () => {
                         <a
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="cta-btn text-color-main"
+                          className="cta-btn cta-btn--hero"
                           href={repo}
                         >
                           Source Code

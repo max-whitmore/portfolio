@@ -1,7 +1,5 @@
 .header {
-  background-image: linear-gradient(
-135deg
-, $primary-color 0%, $secondary-color 100%);
+  background: transparent;
   color: $dark-grey;
 
   @include respond(phone) {
@@ -46,15 +44,18 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    color: $white-color;
-    font-size: 3rem;
+    color: $dark-grey;
+    font-size: 2.5rem;
     width: 3rem;
     height: 3rem;
-    margin: $default-font-size $default-font-size;
+    margin: $xs-font-size $xs-font-size;
     transition: all 0.2s ease-in;
 
     &:hover {
       transform: translateY(-2px);
+    }
+    i {
+      color: $dark-grey;
     }
   }
 }
@@ -74,10 +75,22 @@
   display: flex;
   justify-content: flex-start;
   align-self: center;
-  font-size: 2rem;
+  font-size: $big-font-size;
   font-weight: 700;
   flex: auto;
-  color: $white-color;
+  color: $header-font;
+  h1 {
+    font-size: $mid-font-size;
+    transition: 1s;
+    &:hover {
+      font-size: 2.1rem;
+      background-image: linear-gradient(
+        135deg
+        , #ff0267 0%, #ffbd18 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+    }
+  }
 }
 
 .header-container {

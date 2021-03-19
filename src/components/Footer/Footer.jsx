@@ -15,6 +15,13 @@ const Footer = () => {
             <i className="fa fa-angle-up fa-2x" aria-hidden="true" />
           </Link>
         </span>
+        <div className="footer-content">
+        <p className="footer__text">
+          © {new Date().getFullYear()} - Made by{' '}
+          <a href="https://github.com/maaxw" target="_blank" rel="noopener noreferrer">
+            Max Whitmore
+          </a>
+        </p>
         <div className="social-links">
           {networks &&
             networks.map((network) => {
@@ -32,13 +39,7 @@ const Footer = () => {
               );
             })}
         </div>
-        <hr />
-        <p className="footer__text">
-          © {new Date().getFullYear()} - Made by{' '}
-          <a href="https://github.com/maaxw" target="_blank" rel="noopener noreferrer">
-            Max Whitmore
-          </a>
-        </p>
+        </div>
       </Container>
     </footer>
   );

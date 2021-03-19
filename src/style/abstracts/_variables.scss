@@ -1,17 +1,26 @@
 // COLORS
-$primary-color: #173541;
-$secondary-color: #1b7c46;
+$primary-color: #ff00bf;
+$secondary-color: #ffae18;
 
 // $primary-color: #7f449d;
 // $secondary-color: #793fc1;
 
 $white-color: #fff;
-$light-grey: #f0f0f0;
+$very-light-grey: #f9f8f8;
+$light-grey: #ebebeb;
+$normal-grey: #909090;
 $dark-grey: #333333;
+
+
+$normal-font: #5d666a;
+$header-font: #263238;
 
 $dark-blue-text: #241e46; // For Headings
 
 // FONT SIZE
-$default-font-size: 1.6rem;
-$big-font-size: 4rem;
-$mid-font-size: 2.5rem;
+$big-font-size: 3rem;
+$mid-font-size: 2rem;
+$s-font-size: 1.25rem;
+$xs-font-size: 1rem;
+$subheading-font-size: 1.75rem;
+$default-font-size: 1.5rem;

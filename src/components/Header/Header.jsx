@@ -1,18 +1,22 @@
-import React, { useContext } from 'react';
+import React, { useContext, useState } from 'react';
 import { Container } from 'react-bootstrap';
-import { Link } from 'react-scroll';
+import Fade from 'react-reveal/Fade';
 import PortfolioContext from '../../context/context';
 
 const Header = () => {
-  const { footer } = useContext(PortfolioContext);
-  const { networks } = footer;
+  const { header } = useContext(PortfolioContext);
+  const { networks } = header;
 
-  return (
+  const [isDesktop, setIsDesktop] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
+
+  return (        
+  <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={500} distance="30px">
     <header className="header navbar-static-bottom" id="header">
       <Container>
         <div className="header-container">
         <div className="brand">
-          Max Whitmore
+          <h1>Max Whitmore</h1>
         </div>
         <div className="header-social-links">
           {networks &&
@@ -34,6 +38,7 @@ const Header = () => {
         </div>
       </Container>
     </header>
+    </Fade>
   );
 };
 

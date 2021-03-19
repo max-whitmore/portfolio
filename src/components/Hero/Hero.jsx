@@ -28,28 +28,18 @@ const Header = () => {
         <div class="hero-container">
         <div class="hero-intro">
         <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={500} distance="30px">
-          <h1 className="hero-title">
-            {title || 'Hi, my name is'}{' '}
-            <span className="text-color-main">{name}</span>
-            <br />
-            {subtitle}
-          </h1>
-        </Fade>
-        <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={1000} distance="30px">
-          <p className="hero-cta">
-            <span className="cta-btn cta-btn--hero">
-              <Link to="about" smooth duration={1000}>
-                {cta}
-              </Link>
-            </span>
-          </p>
+          <h3 className="hero-title"> Hi, I'm {title}<span className="text-color-main"> {name}</span>, Front End Developer & cat dad.
+
+          </h3>
+          <h3 className="hero-subtitle">
+          {subtitle}
+          </h3>
         </Fade>
         </div>
         <div className="hero-background">
         <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={1000} distance="30px">
           <div className="hero-image">
           <div className="hero-wrapper__image">
-          <HeroImg alt={title} filename={img} />
               </div>
           </div>
         </Fade>

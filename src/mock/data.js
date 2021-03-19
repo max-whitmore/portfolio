@@ -10,18 +10,18 @@ export const headData = {
 // HERO DATA
 export const heroData = {
   title: '',
-  name: 'Max Whitmore,',
-  subtitle: ' a Front End Developer, based in Kent, England.',
+  name: 'Max Whitmore',
+  subtitle: 'Currently I am working at Pearson College London to improve their site through .',
   cta: 'About me',
   img: 'hero-image-small.png'
 };
 
 // ABOUT DATA
 export const aboutData = {
-  img: 'profile.png',
-  paragraphOne: 'Para one',
-  paragraphTwo: 'Para two',
-  paragraphThree: 'Para three',
+  img: 'hero-image-small.png',
+  paragraphOne: 'My name is Max Whitmore, a Front End Developer, based in Kent, England. I have a passion for web development.',
+  paragraphTwo: ' blah blah blah blah blah blahblah blah blah blah blah blahblah blah blah blah blah blahblah blah blah blah blah blahblah blah blah blah blah blahblah blah blah blah blah blahblah blah blah blah blah blahblah blah blah blah blah blah',
+  paragraphThree: 'blah blah blah blah blah blahblah blah blah blah blah blahblah blah blah blah blah blahblah blah blah blah blah blahblah blah blah blah blah blahblah blah blah blah blah blahblah blah blah blah blah blah',
 }; 
 
 // PROJECTS DATA
@@ -30,8 +30,11 @@ export const projectsData = [
     id: nanoid(),
     img: 'project.jpg',
     title: 'Pearson College London',
-    info: 'Info 2',
-    info2: 'Info 3',
+    dates: '2019 - present',
+    info: 'Overhaul of the Pearson College London website and Adobe Experience Manager system, to provide a responsive and accessible website to inform users about Pearson College London.',
+    subheading: 'Goal',
+    subheading2: 'Technology',
+    info2: 'HTML, CSS, JavaScript, LESS & Adobe Experience Manager.',
     url: 'https://www.pearsoncollegelondon.ac.uk/',
     repo: '', // if no repo, the button will not show up
   }
@@ -42,6 +45,23 @@ export const contactData = {
   cta: 'Have a project that you would like to discuss with me?',
   btn: 'Get in touch!',
   email: 'maxcwhitmore@gmail.com',
+};
+
+// HEADER DATA
+
+export const headerData = {
+  networks: [
+    {
+      id: nanoid(),
+      name: 'linkedin',
+      url: 'https://www.linkedin.com/in/maxw',
+    },
+    {
+      id: nanoid(),
+      name: 'github',
+      url: 'https://github.com/max-whitmore',
+    },
+  ],
 };
 
 // FOOTER DATA
@@ -55,7 +75,7 @@ export const footerData = {
     {
       id: nanoid(),
       name: 'github',
-      url: 'https://github.com/maaxw',
+      url: 'https://github.com/max-whitmore',
     },
   ],
 };
