@@ -1,8 +1,12 @@
 #about {
-  background-color: $light-grey;
+  //background-color: $light-grey;
   color: $header-font;
   height: 100%;
   border-top: 0px;
+  background-color: $light-grey;
+  height: 100%;
+  border-top: 0;
+  padding-bottom: 5%;
 
   @include respond(tab-land) {
     height: 100%;
@@ -11,19 +15,12 @@
   }
 
   .about-wrapper {
-    @include respond(phone) {
-      padding-bottom: 5rem;
-    }
 
     &__image {
       display: flex;
       height: 100%;
       align-items: center;
       justify-content: center;
-
-      @include respond(tab-port) {
-        padding-bottom: 6.4rem;
-      }
       @include respond(tab-land) {
         height: 100%;
       }

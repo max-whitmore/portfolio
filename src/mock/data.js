@@ -11,17 +11,17 @@ export const headData = {
 export const heroData = {
   title: '',
   name: 'Max Whitmore',
-  subtitle: 'Currently I am working at Pearson College London to improve their site through .',
+  subtitle: 'I am currently working at Pearson College London to improve and modernise their website.',
   cta: 'About me',
-  img: 'hero-image-small.png'
+  img: 'hero-image.png'
 };
 
 // ABOUT DATA
 export const aboutData = {
   img: 'hero-image-small.png',
-  paragraphOne: 'My name is Max Whitmore, a Front End Developer, based in Kent, England. I have a passion for web development.',
-  paragraphTwo: ' blah blah blah blah blah blahblah blah blah blah blah blahblah blah blah blah blah blahblah blah blah blah blah blahblah blah blah blah blah blahblah blah blah blah blah blahblah blah blah blah blah blahblah blah blah blah blah blah',
-  paragraphThree: 'blah blah blah blah blah blahblah blah blah blah blah blahblah blah blah blah blah blahblah blah blah blah blah blahblah blah blah blah blah blahblah blah blah blah blah blahblah blah blah blah blah blah',
+  paragraphOne: 'My name is Max Whitmore, I am a Front End Developer, based in Kent, England. I have a passion for web development.',
+  paragraphTwo: 'I\'\m really in to playing football and running, and I like to drink beer and gin.',
+  paragraphThree: 'Add some more',
 }; 
 
 // PROJECTS DATA
@@ -34,9 +34,21 @@ export const projectsData = [
     info: 'Overhaul of the Pearson College London website and Adobe Experience Manager system, to provide a responsive and accessible website to inform users about Pearson College London.',
     subheading: 'Goal',
     subheading2: 'Technology',
-    info2: 'HTML, CSS, JavaScript, LESS & Adobe Experience Manager.',
+    info2: 'HTML, CSS, LESS, JavaScript & Adobe Experience Manager.',
     url: 'https://www.pearsoncollegelondon.ac.uk/',
     repo: '', // if no repo, the button will not show up
+  },
+  {
+    id: nanoid(),
+    img: 'pwgen.PNG',
+    title: 'Password generator',
+    dates: '',
+    info: 'Small password generator app with a simple copy button.',
+    subheading: 'Goal',
+    subheading2: 'Technology',
+    info2: 'HTML, CSS, LESS, JavaScript',
+    url: 'https://max-whitmore.github.io/PasswordGenerator',
+    repo: 'https://github.com/max-whitmore/PasswordGenerator', // if no repo, the button will not show up
   }
 ];
 
@@ -79,3 +91,19 @@ export const footerData = {
     },
   ],
 };
+
+// Pearson College London data
+export const pclData = [
+  {
+    id: nanoid(),
+    img: 'project.jpg',
+    title: 'Pearson College London',
+    dates: '2019 - present',
+    info: 'Overhaul of the Pearson College London website and Adobe Experience Manager system, to provide a responsive and accessible website to inform users about Pearson College London.',
+    subheading: 'Goal',
+    subheading2: 'Technology',
+    info2: 'HTML, CSS, JavaScript, LESS & Adobe Experience Manager.',
+    url: 'https://www.pearsoncollegelondon.ac.uk/',
+    repo: '', // if no repo, the button will not show up
+  }
+];

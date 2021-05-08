@@ -1,15 +1,36 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
+import Header from '../../components/Header/Header';
+import Footer from '../../components/Footer/Footer';
 
-//import Header from '../../components/Header/Header'
-import 'bootstrap/dist/css/bootstrap.min.css';
-// /import '../../style/main.css';
+import { PortfolioProvider } from '../../context/context';
 
-function PCL() {
+import { headerData, footerData } from '../../mock/data';
+
+function Test() {
+  const [footer, setFooter] = useState({});
+  const [header, setHeader] = useState({});
+
+
+  useEffect(() => {
+    setHeader({ ...headerData });
+    setFooter({ ...footerData });
+
+  }, []);
+
   return (
-      <h1>
-        test
-      </h1>
-  )
+    <PortfolioProvider value={{ header, footer }}>
+      <Header />
+<main>
+  <article>
+    <h1>Pearson College London - Front End Developer</h1>
+<div class="project">
+  
+</div>
+  </article>
+</main>
+      <Footer />
+    </PortfolioProvider>
+  );
 }
 
-export default PCL;
+export default Test;

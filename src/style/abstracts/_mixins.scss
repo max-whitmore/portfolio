@@ -47,7 +47,7 @@ ORDER: Base + Typography > Generar Layout + Grid > Page Layout > Components
 
 // Border White Mixin
 @mixin section-borders {
-  border: 1.5rem solid #fff;
+  border: 1.5rem solid $white-color;
   border-top: 0;
   border-bottom: 0;
 }
