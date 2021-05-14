@@ -1,5 +1,5 @@
 #about {
-  //background-color: $light-grey;
+  background-color: $light-grey;
   color: $header-font;
   height: 100%;
   border-top: 0px;
@@ -37,10 +37,10 @@
         color: $normal-font;
 
         @include respond(tab-port) {
-          font-size: 1.5rem;
+          font-size: $s-font-size;
         }
         @include respond(phone) {
-          font-size: 1.6rem;
+          font-size: $s-font-size;
         }
 
         &--important {

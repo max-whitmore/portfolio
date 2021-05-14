@@ -1,6 +1,7 @@
 .header {
   background: transparent;
   color: $dark-grey;
+  box-shadow: 0 0 5px -3px;
 
   @include respond(phone) {
     border: 0px;
@@ -8,7 +9,7 @@
 
   &__text {
     color: $dark-grey;
-    font-size: 1.3rem;
+    font-size: $s-font-size;
 
     a {
       color: $dark-grey;
@@ -80,10 +81,10 @@
   flex: auto;
   color: $header-font;
   h1 {
-    font-size: $mid-font-size;
+    font-size: $default-font-size;
     transition: 1s;
     &:hover {
-      font-size: 2.1rem;
+      font-size: $default-font-size;
       background-image: linear-gradient(
         135deg
         , #ff0267 0%, #ffbd18 100%);
