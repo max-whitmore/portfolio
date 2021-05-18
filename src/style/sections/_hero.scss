@@ -17,12 +17,9 @@
 
   // If you want to set a background image on the hero section, uncomment these with yout custom image
 
-   background: url("/portfolio/src/assets/hero-image.png");
-  background-position: center;
-  background-size: cover; 
-
   @include respond(phone) {
     padding: 1rem $default-font-size;
+    height: unset;
 
     .hero-background {
       display: none;
@@ -30,33 +27,36 @@
     .hero-intro {
       width: 100%;
     }
+    .hero-container {
+      flex-direction: column;
+    }
   }
 
   .hero-title {
-    font-size: 5.6rem;
+    font-size: $big-font-size;
     font-weight: 700;
     margin-bottom: 3.2rem;
     text-align: left;
 
     @include respond(tab-land) {
-      font-size: 4rem;
+      font-size: $mid-font-size;
     }
     @include respond(tab-port) {
-      font-size: 3.6rem;
+      font-size: $mid-font-size;
     }
     @include respond(phone) {
-      font-size: 3.5rem;
+      font-size: $mid-font-size;
       line-height: 1.5;
     }
     @include respond(phone-xs) {
-      font-size: 2.8rem;
+      font-size: $mid-font-size
     }
     font-weight: 300;
   }
 
 
   .hero-subtitle {
-    font-size: 2.5rem;
+    font-size: $mid-font-size;
     font-weight: 300;
     margin-bottom: 3.2rem;
     text-align: left;
@@ -72,27 +72,31 @@
     }
 
     & a {
-      font-size: 2.4rem;
+      font-size: $default-font-size;
 
       @include respond(phone) {
-        font-size: 2rem;
+        font-size: $default-font-size;
       }
     }
   }
 }
 
-.hero-image-container {
-  width: 50%;
-}
-
 .hero-container {
   display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  flex-direction: row;
 }
 
 .hero-intro {
-  width: 60%;
+  flex: 1 1 0%;
 }
 
-//.hero-background {
-  //width: 40%;
-//}
+.hero-image {
+  flex: 1 1 0%;
+  img {
+    width: 100%;
+  }
+}

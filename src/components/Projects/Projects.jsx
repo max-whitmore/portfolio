@@ -26,20 +26,20 @@ const Projects = () => {
     <section id="projects">
       <Container>
         <div className="project-wrapper">
-          <Title title="Work & projects" />
+          <Title title="Work and projects" />
           {projects.map((project) => {
             const {
               title,
               dates,
-              subheading,
-              subheading2,
               info,
               info2,
               projectinfo,
               url,
-              repo,
               img,
               id,
+              externallink,
+              github,
+              repo,
             } = project;
 
             return (
@@ -54,40 +54,39 @@ const Projects = () => {
                   >
                     <div className="project-wrapper__text">
                       <h3 className="project-wrapper__text-title">{title || 'Project Title'}</h3>
-                      <p className="project-wrapper__text-dates">{dates}</p>
+                      <p className="project-wrapper__text-dates font-mono">{dates}</p>
                       <div className="project-wrapper__text-block">
-                        <h4 className="project-wrapper__text-subheading">{subheading}</h4>
                         <p className="project-wrapper__text-info">{info}</p>
-                        <h4 className="project-wrapper__text-subheading">{subheading2}</h4>
-                        <p className="project-wrapper__text-info">{info2 || ''}</p>
+                        <p className="project-wrapper__text font-mono font-semibold lowercase black-font">
+                          {info2 || ''}
+                        </p>
                       </div>
-                      <a
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="cta-btn cta-btn--hero"
-                        href={projectinfo}
-                      >
-                        Project page
-                      </a>
-                      <a
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="cta-btn cta-btn--hero"
-                        href={url || '#!'}
-                      >
-                        See Live
-                      </a>
-
-                      {repo && (
+                      <div className="project-ctas">
+                        <a
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="cta-btn cta-btn--hero"
+                          href={projectinfo}
+                        >
+                          <i className={`fas fa-${externallink}`} />
+                        </a>
+                        <a
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="cta-btn cta-btn--hero"
+                          href={url}
+                        >
+                          <i className={`fas fa-${github}`} />
+                        </a>
                         <a
                           target="_blank"
                           rel="noopener noreferrer"
                           className="cta-btn cta-btn--hero"
                           href={repo}
                         >
-                          Source Code
+                          <i className={`fas fa-${github}`} />
                         </a>
-                      )}
+                      </div>
                     </div>
                   </Fade>
                 </Col>

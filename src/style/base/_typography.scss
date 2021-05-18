@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;600&display=swap');
+// Add Nunito sans
 
 h1 {
   font-weight: 700;
@@ -29,7 +31,7 @@ a:hover {
   font-weight: 700;
 
   @include respond(phone) {
-    font-size: 2.8rem;
+    font-size: $mid-font-size;
   }
 }
 
@@ -51,4 +53,20 @@ a:hover {
   &:hover {
     transform: translateX(2px);
   }
+}
+
+.font-mono {
+  font-family: Roboto\ Mono, ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+.font-semibold {
+  font-weight: 600;;
+}
+
+.lowercase {
+  text-transform: lowercase;
+}
+
+.black-font {
+  color: $black;
 }

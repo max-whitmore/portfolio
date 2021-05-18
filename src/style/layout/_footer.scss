@@ -10,13 +10,13 @@
 
   &__text {
     color: darken(white, 50%);
-    font-size: 1.3rem;
+    font-size: $default-font-size;
     text-align: left;
     align-self: center;
 
     a {
       color: darken(white, 50%);
-      font-size: 1.3rem;
+      font-size: $default-font-size;
       transition: all 0.4s;
       display: inline-block;
       background-color: $dark-grey;
@@ -51,10 +51,10 @@
 
   a {
     display: flex;
-    flex-direction: column;
     justify-content: center;
+    align-items: center;
     color: $white-color;
-    font-size: 3rem;
+    font-size: $subheading-font-size;
     width: 5rem;
     height: 5rem;
     transition: all 0.2s ease-in;
@@ -64,7 +64,7 @@
     }
   }
   .fa {
-    font-size: 2.5rem;
+    font-size: $subheading-font-size;
   }
 }
 

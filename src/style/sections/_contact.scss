@@ -19,7 +19,7 @@
 
     &__text,
     a {
-      font-size: 2.4rem;
+      font-size: $default-font-size;
 
       // Responsive for contact text
       @include respond(phone) {
