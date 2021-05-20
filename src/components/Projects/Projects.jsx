@@ -26,7 +26,7 @@ const Projects = () => {
     <section id="projects">
       <Container>
         <div className="project-wrapper">
-          <Title title="Work and projects" />
+          <Title title="Web development_" />
           {projects.map((project) => {
             const {
               title,
@@ -37,7 +37,7 @@ const Projects = () => {
               url,
               img,
               id,
-              externallink,
+              link,
               github,
               repo,
             } = project;
@@ -79,7 +79,7 @@ const Projects = () => {
                           className="project-button"
                           href={url || ''}
                         >
-                          <i className={`fa fa-${externallink}`} />
+                          <i className={`fa fa-${link}`} />
                           <i class="fas fa-external-link-alt"></i>
                         </a>
                         )}

@@ -38,7 +38,7 @@ export const projectsData = [
     info2: 'HTML, CSS, LESS, JavaScript & Adobe Experience Manager.',
     projectinfo: '/work/pearson-college-london',
     url: 'https://www.pearsoncollegelondon.ac.uk/',
-    externallink: 'link',
+    link: 'link',
     github: '',
     repo: '', // if no repo, the button will not show up
   },
@@ -53,7 +53,7 @@ export const projectsData = [
     info2: 'HTML, CSS, LESS, JavaScript',
     projectinfo: '',
     url: 'https://github.com/max-whitmore/PasswordGenerator',
-    externallink: 'link',
+    link: 'link',
     github: 'github',
     repo: 'https://max-whitmore.github.io/PasswordGenerator',
   },
