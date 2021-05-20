@@ -62,30 +62,27 @@ const Projects = () => {
                         </p>
                       </div>
                       <div className="project-ctas">
+                        {repo && (
                         <a
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="cta-btn cta-btn--hero"
-                          href={projectinfo}
+                          className="project-button"
+                          href={repo || ''}
                         >
-                          <i className={`fas fa-${externallink}`} />
+                          <i className={`fa fa-${github}`} />
                         </a>
+                        )}
+                         {url && (
                         <a
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="cta-btn cta-btn--hero"
-                          href={url}
+                          className="project-button"
+                          href={url || ''}
                         >
-                          <i className={`fas fa-${github}`} />
+                          <i className={`fa fa-${externallink}`} />
+                          <i class="fas fa-external-link-alt"></i>
                         </a>
-                        <a
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="cta-btn cta-btn--hero"
-                          href={repo}
-                        >
-                          <i className={`fas fa-${github}`} />
-                        </a>
+                        )}
                       </div>
                     </div>
                   </Fade>

@@ -90,3 +90,16 @@
   display: flex;
   justify-content: flex-end;
 }
+
+.project-button {
+  padding: 0 10px;
+  .fa,
+  .fas {
+    color: $black;
+    font-size: 1.5rem;
+    line-height: 1.2rem;
+  }
+  &:last-child {
+    padding-right: 0;
+  }
+}
