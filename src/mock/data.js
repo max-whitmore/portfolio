@@ -21,10 +21,9 @@ export const heroData = {
 // ABOUT DATA
 export const aboutData = {
   img: 'hero-image-small.png',
-  paragraphOne:
-    'My name is Max Whitmore, I am a Front End Developer, based in Kent, England. I have a passion for web development.',
-  paragraphTwo: 'In my spare time I enjoy playing football, running, and drinking beer and gin!',
-  paragraphThree: 'Add some more',
+  paragraphOne:'Hi, my name is Max, a passionate Front End Developer currently working at Pearson College London.',
+  paragraphTwo: 'I have a keen interest in making websites really great, by having  ',
+  paragraphThree: 'In my spare time I enjoy playing football, running, as well as drinking beer and gin!',
 };
 
 // PROJECTS DATA
@@ -53,10 +52,10 @@ export const projectsData = [
     subheading2: 'Technology',
     info2: 'HTML, CSS, LESS, JavaScript',
     projectinfo: '',
-    url: 'https://github.com/max-whitmore/PasswordGenerator',
+    url: 'https://max-whitmore.github.io/PasswordGenerator',
     link: 'link',
     github: 'github',
-    repo: 'https://max-whitmore.github.io/PasswordGenerator',
+    repo: 'https://github.com/max-whitmore/PasswordGenerator', // if no repo, the button will not show up
   },
 ];
 
