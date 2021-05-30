@@ -11,8 +11,9 @@ export const headData = {
 export const heroData = {
   title: '',
   name: 'Max Whitmore',
-  subtitle:
-    'I am currently working at Pearson College London to improve and modernise their website.',
+  subtitle: 'I am currently working at ',
+  subtitle2: 'Pearson College London',
+  subtitle3: ' to improve and modernise their website.',
   cta: 'About me',
   img: 'hero-image-small.png',
 };

@@ -28,7 +28,7 @@ const HeroImg = ({ filename, alt }) => (
       if (!image) return null;
 
       const imageFixed = image.node.childImageSharp.fixed;
-      return <Img className="hero-image" alt={alt} fixed={imageFixed} />;
+      return <Img className="" alt={alt} fixed={imageFixed} />;
     }}
   />
 );

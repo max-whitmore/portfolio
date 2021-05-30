@@ -100,3 +100,13 @@
     width: 100%;
   }
 }
+
+.pcl-link {
+  font-size: $mid-font-size;
+  color: $normal-font;
+  background-color: rgb(206, 248, 255);
+  &:hover {
+    background-color: rgb(79, 229, 255);
+    color: $normal-font;
+  }
+}

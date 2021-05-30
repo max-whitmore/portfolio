@@ -19,7 +19,6 @@
       font-size: $default-font-size;
       transition: all 0.4s;
       display: inline-block;
-      background-color: $dark-grey;
 
       &:hover,
       &:active {
@@ -42,6 +41,7 @@
 .footer-content {
   display: flex;
   justify-content: space-between;
+  flex-direction: column;
 }
 
 .social-links {

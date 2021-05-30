@@ -2,6 +2,7 @@
   background: $light-grey;
   padding: 5rem 0;
   color: $header-font;
+  display: none;
 
   @include respond(tab-land) {
     padding: 5rem 0;

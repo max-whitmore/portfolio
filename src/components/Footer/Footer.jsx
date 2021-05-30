@@ -10,19 +10,9 @@ const Footer = () => {
   return (
     <footer className="footer navbar-static-bottom">
       <Container>
-        <span className="back-to-top">
-          <Link to="header" smooth duration={1000}>
-            <i className="fa fa-angle-up fa-2x" aria-hidden="true" />
-          </Link>
-        </span>
+
         <div className="footer-content">
-          <p className="footer__text">
-            © {new Date().getFullYear()} - Created by by{' '}
-            <a href="https://github.com/maaxw" target="_blank" rel="noopener noreferrer">
-              Max Whitmore
-            </a>
-          </p>
-          <div className="social-links">
+        <div className="social-links">
             {networks &&
               networks.map((network) => {
                 const { id, name, url } = network;
@@ -39,6 +29,11 @@ const Footer = () => {
                 );
               })}
           </div>
+          <p className="footer__text">Created by{' '}
+            <a href="https://github.com/maaxw" target="_blank" rel="noopener noreferrer">
+              Max Whitmore.
+            </a> © {new Date().getFullYear()}
+          </p>
         </div>
       </Container>
     </footer>

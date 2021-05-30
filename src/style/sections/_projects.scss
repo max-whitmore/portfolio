@@ -92,9 +92,11 @@
 }
 
 .project-button {
-  padding: 0 10px;
+  margin: 5px;
   .fa,
   .fas {
+    display: flex;
+    justify-content: center;
     color: $black;
     font-size: 1.5rem;
     line-height: 1.2rem;
@@ -106,4 +108,18 @@
   &:last-child {
     padding-right: 0;
   }
+}
+
+.project-links {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: $light-grey;
+}
+
+.projects-title-intro {
+  margin-bottom: 3rem;
+  text-align: center;
+  color: $normal-font;
 }

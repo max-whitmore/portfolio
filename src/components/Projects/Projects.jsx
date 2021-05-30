@@ -26,7 +26,8 @@ const Projects = () => {
     <section id="projects">
       <Container>
         <div className="project-wrapper">
-          <Title title="Web development_" />
+          <Title title="Web development" />
+          <p className="projects-title-intro">Here are some of the web development projects I have worked on.</p>
           {projects.map((project) => {
             const {
               title,
@@ -62,6 +63,7 @@ const Projects = () => {
                         </p>
                       </div>
                       <div className="project-ctas">
+                        <div className="project-links">
                         {repo && (
                         <a
                           target="_blank"
@@ -83,6 +85,7 @@ const Projects = () => {
                           <i class="fas fa-external-link-alt"></i>
                         </a>
                         )}
+                        </div>
                       </div>
                     </div>
                   </Fade>
