@@ -21,20 +21,22 @@ export const heroData = {
 // ABOUT DATA
 export const aboutData = {
   img: 'hero-image-small.png',
-  paragraphOne:'Hi, my name is Max, a passionate Front End Developer currently working at Pearson College London.',
+  paragraphOne:
+    'Hi, my name is Max, a passionate Front End Developer currently working at Pearson College London.',
   paragraphTwo: 'I have a keen interest in making websites really great, by having  ',
-  paragraphThree: 'In my spare time I enjoy playing football, running, as well as drinking beer and gin!',
+  paragraphThree:
+    'In my spare time I enjoy playing football, running, as well as drinking beer and gin!',
 };
 
 // PROJECTS DATA
 export const projectsData = [
   {
     id: nanoid(),
-    img: 'project.jpg',
+    img: 'pcl-homepage.png',
     title: 'Pearson College London',
     dates: '2019 - present',
     info:
-      'Overhaul of the Pearson College London website and Adobe Experience Manager system, to provide a responsive and accessible website to inform users about Pearson College London.',
+      'Overhaul of the Pearson College London website and Adobe Experience Manager CMS system, to provide a responsive and accessible website to inform users about Pearson College London.',
     info2: 'HTML, CSS, LESS, JavaScript & Adobe Experience Manager.',
     projectinfo: '/work/pearson-college-london',
     url: 'https://www.pearsoncollegelondon.ac.uk/',
@@ -44,7 +46,7 @@ export const projectsData = [
   },
   {
     id: nanoid(),
-    img: 'pwgen.PNG',
+    img: 'password-generator-app.png',
     title: 'Password generator',
     dates: '',
     info: 'Small password generator app with a simple copy button.',
