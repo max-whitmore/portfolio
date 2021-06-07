@@ -82,7 +82,7 @@ const Projects = () => {
                           href={url || ''}
                         >
                           <i className={`fa fa-${link}`} />
-                          <i class="fas fa-external-link-alt"></i>
+                          <i className="fas fa-external-link-alt"></i>
                         </a>
                         )}
                         </div>

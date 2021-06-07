@@ -23,7 +23,7 @@ function Test() {
 <main>
   <article>
     <h1>Pearson College London - Front End Developer</h1>
-<div class="project">
+<div className="project">
   
 </div>
   </article>
