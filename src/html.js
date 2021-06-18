@@ -25,6 +25,13 @@ export default function HTML({
         {preBodyComponents}
         <div key="body" id="___gatsby" dangerouslySetInnerHTML={{ __html: body }} />
         {postBodyComponents}
+        <script
+  dangerouslySetInnerHTML={{
+    __html: `
+    console.log('Plain JavaScript inside Gatsby!');
+`
+  }}
+/>
       </body>
     </html>
   );

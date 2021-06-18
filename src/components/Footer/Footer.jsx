@@ -30,8 +30,8 @@ const Footer = () => {
               })}
           </div>
           <p className="footer__text">Created by{' '}
-            <a href="https://github.com/maaxw" target="_blank" rel="noopener noreferrer">
-              Max Whitmore.
+            <a href="https://github.com/max-whitmore" target="_blank" rel="noopener noreferrer">
+              Max Whitmore
             </a> © {new Date().getFullYear()}
           </p>
         </div>

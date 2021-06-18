@@ -37,7 +37,7 @@ export const projectsData = [
     dates: '2019 - present',
     info:
       'Overhaul of the Pearson College London website and Adobe Experience Manager CMS system, to provide a responsive and accessible website to inform users about Pearson College London.',
-    info2: 'HTML, CSS, LESS, JavaScript & Adobe Experience Manager.',
+    info2: 'HTML // CSS // LESS // JavaScript // Adobe Experience Manager.',
     projectinfo: '/work/pearson-college-london',
     url: 'https://www.pearsoncollegelondon.ac.uk/',
     link: 'link',
@@ -52,7 +52,7 @@ export const projectsData = [
     info: 'Small password generator app with a simple copy button.',
     subheading: 'Goal',
     subheading2: 'Technology',
-    info2: 'HTML, CSS, LESS, JavaScript',
+    info2: 'HTML // CSS // LESS // JavaScript',
     projectinfo: '',
     url: 'https://max-whitmore.github.io/PasswordGenerator',
     link: 'link',

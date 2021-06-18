@@ -17,6 +17,8 @@ export default () => {
         <meta name="description" content={description} />
       </Helmet>
       <App />
+      
     </>
   );
+
 };

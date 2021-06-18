@@ -1,6 +1,6 @@
 .footer {
   background-color: $dark-grey;
-  color: $white-color;
+  color: $white;
   padding: 2rem 0;
 
 
@@ -53,7 +53,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    color: $white-color;
+    color: $white;
     font-size: $subheading-font-size;
     width: 5rem;
     height: 5rem;
@@ -69,7 +69,7 @@
 }
 
 .back-to-top i {
-  color: $white-color;
+  color: $white;
   margin: 1rem 0 $default-font-size;
   transition: all 0.2s ease-in;
   cursor: pointer;

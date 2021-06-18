@@ -1,12 +1,12 @@
 #about {
   background-color: $light-grey;
+  display: none;
   color: $header-font;
   height: 100%;
   border-top: 0px;
   background-color: $light-grey;
   height: 100%;
   border-top: 0;
-  padding-bottom: 5%;
 
   @include respond(tab-land) {
     height: 100%;
