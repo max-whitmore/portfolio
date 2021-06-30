@@ -49,15 +49,30 @@ export const projectsData = [
     img: 'password-generator-app.png',
     title: 'Password generator',
     dates: '',
-    info: 'Small password generator app with a simple copy button.',
+    info: 'Small password generator with a simple copy button.',
     subheading: 'Goal',
     subheading2: 'Technology',
-    info2: 'HTML // CSS // LESS // JavaScript',
+    info2: 'HTML // CSS // JavaScript',
     projectinfo: '',
     url: 'https://max-whitmore.github.io/PasswordGenerator',
     link: 'link',
     github: 'github',
     repo: 'https://github.com/max-whitmore/PasswordGenerator', // if no repo, the button will not show up
+  },
+  {
+    id: nanoid(),
+    img: 'url-shortener-app.png',
+    title: 'URL Shortener',
+    dates: '',
+    info: 'A very leightweight URL shortener that takes any https link and creates a short URL with it, made using a Short ID library.',
+    subheading: 'Goal',
+    subheading2: 'Technology',
+    info2: 'HTML // CSS //  JavaScript // Bootstrap // EJS // MongoDB // Express',
+    projectinfo: '',
+    url: '',
+    link: 'link',
+    github: 'github',
+    repo: 'https://github.com/max-whitmore/URLShortner', // if no repo, the button will not show up
   },
 ];
 

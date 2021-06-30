@@ -5,8 +5,13 @@
   padding: 0.8rem $default-font-size;
   font-weight: 500;
   line-height: 1;
+  border-radius: 1rem;
   z-index: 1;
   transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.6s;
+  box-shadow: 0 .125rem .25rem rgba(0,0,0,.075);
+  &:hover {
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+  }
 
   &::after {
     content: '';

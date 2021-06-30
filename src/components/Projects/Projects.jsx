@@ -68,30 +68,27 @@ const Projects = () => {
                         <a
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="project-button"
+                          className="project-button github-btn"
                           href={repo || ''}
-                        >
-                          <i className={`fa fa-${github}`} />
+                        >Github <i className={`fa fa-${github}`} />
                         </a>
                         )}
                         {projectinfo && (
                         <a
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="project-button"
+                          className="project-button projectinfo-btn"
                           href={projectinfo || ''}
-                        >
-                          <i className={`fas fa-terminal`} />
+                        > Project page
                         </a>
                         )}
                          {url && (
                         <a
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="project-button"
+                          className="project-button link-btn"
                           href={url || ''}
-                        > 
-                          <i className={`fa fa-${link}`} />
+                        >Link <i className={`fa fa-${link}`} />
                         </a>
                         )}
                         </div>

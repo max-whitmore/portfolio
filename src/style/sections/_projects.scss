@@ -1,5 +1,5 @@
 #projects {
-  background-color: $white;
+  background-color: $light-grey;
   color: $dark-grey;
   padding-bottom: 5%;
 
@@ -91,12 +91,33 @@
   justify-content: flex-end;
 }
 
+.link-btn {
+  padding: .5rem 1rem;
+  color: $black;
+  &:hover {
+    color: $black;
+  }
+}
+
+.github-btn,
+.projectinfo-btn {
+  background-color: $white;
+  padding: .5rem 1rem;
+  color: $black;
+  border-radius: 1rem;
+  box-shadow: 0 .125rem .25rem rgba(0,0,0,.075);
+  &:hover {
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+    color: $black;
+  }
+}
+
 .project-button {
   margin: 5px;
+  border: 1rem;
   .fa,
   .fas {
-    display: flex;
-    justify-content: center;
+    margin-left: 5px;
     color: $black;
     font-size: 1.5rem;
     line-height: 1.2rem;
@@ -105,9 +126,6 @@
       transform: translateY(-2px);
     }
   }
-  &:last-child {
-    padding-right: 0;
-  }
 }
 
 .project-links {
@@ -115,11 +133,105 @@
   justify-content: space-evenly;
   padding: 10px;
   border-radius: 5px;
-  background-color: $light-grey;
 }
 
 .projects-title-intro {
   margin-bottom: 3rem;
   text-align: center;
   color: $normal-font;
+}
+
+// Project page 
+.pp-wrapper{
+  display: flex;
+  justify-content: center;
+  margin: 0 1rem;
+  min-height: 40vh;
+}
+
+.pp-content {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.pp-title {
+  text-align: center;
+}
+
+.pp-description {
+  text-align: center;
+}
+
+.pp-img {
+  width: 50px;
+  height: auto;
+  box-shadow: 0 .125rem .25rem rgba(0,0,0,.075);
+  padding: 5rem 2rem;
+}
+
+.pp-img-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.pp-info-wrapper {
+  display: flex;
+  justify-content: center;
+  margin: 3rem 2rem;
+}
+
+.pp-info-container {
+  display: flex;
+  justify-content: center;
+  @include respond(tab-port) {
+    flex-direction: column;
+  }
+}
+
+.pp-info-section {
+  padding: 0 3rem;
+}
+
+.pp-info-list {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0;
+  li {
+      background-color: $light-grey;
+      padding: .5rem 1rem;
+      margin: .5rem 0;
+      color: $black;
+      border-radius: 1rem;
+      box-shadow: 0 .125rem .25rem rgba(0,0,0,.075);
+      &:hover {
+        box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+        color: $black;
+      }
+      a {
+        color: $black;
+      }
+  }
+}
+
+.pp-tech-list {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0;
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: 1fr 1fr;
+  li {
+      background-color: $light-grey;
+      text-align: center;
+      padding: .5rem 1rem;
+      margin: .5rem 0;
+      color: $black;
+      border-radius: 1rem;
+      box-shadow: 0 .125rem .25rem rgba(0,0,0,.075);
+      a {
+        color: $black;
+      }
+  }
 }
