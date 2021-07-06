@@ -20,12 +20,12 @@ export const heroData = {
 
 // ABOUT DATA
 export const aboutData = {
-  img: 'hero-image-small.png',
+  img: '',
   paragraphOne:
-    'Hi, my name is Max, a passionate Front End Developer currently working at Pearson College London.',
-  paragraphTwo: 'I have a keen interest in making websites really great, by having  ',
+    '',
+  paragraphTwo: ' ',
   paragraphThree:
-    'In my spare time I enjoy playing football, running, as well as drinking beer and gin!',
+    '',
 };
 
 // PROJECTS DATA
@@ -36,7 +36,7 @@ export const projectsData = [
     title: 'Pearson College London',
     dates: '2019 - present',
     info: 'Overhaul of the Pearson College London website and Adobe Experience Manager CMS system, to provide a responsive and accessible website to inform users about Pearson College London.',
-    info2: 'HTML // CSS // LESS // JavaScript // Adobe Experience Manager.',
+    info2: 'HTML // CSS // LESS // JavaScript // Adobe Experience Manager',
     projectinfo: '/work/pearson-college-london',
     url: 'https://www.pearsoncollegelondon.ac.uk/',
     link: 'link',
@@ -68,10 +68,10 @@ export const projectsData = [
     subheading2: 'Technology',
     info2: 'HTML // CSS //  JavaScript // Bootstrap // EJS // MongoDB // Express',
     projectinfo: '',
-    url: '',
+    url: 'http://short-url-heroku.herokuapp.com/',
     link: 'link',
     github: 'github',
-    repo: 'https://github.com/max-whitmore/URLShortner', // if no repo, the button will not show up
+    repo: 'https://github.com/max-whitmore/shorturl', // if no repo, the button will not show up
   },
 ];
 
