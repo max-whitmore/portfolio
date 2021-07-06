@@ -14,7 +14,7 @@ export const heroData = {
   subtitle: 'I am currently working at ',
   subtitle2: 'Pearson College London',
   subtitle3: ' to improve and modernise their website.',
-  cta: 'About me',
+  cta: 'View more',
   img: 'hero-image-small.png',
 };
 
@@ -35,8 +35,7 @@ export const projectsData = [
     img: 'pcl-homepage.png',
     title: 'Pearson College London',
     dates: '2019 - present',
-    info:
-      'Overhaul of the Pearson College London website and Adobe Experience Manager CMS system, to provide a responsive and accessible website to inform users about Pearson College London.',
+    info: 'Overhaul of the Pearson College London website and Adobe Experience Manager CMS system, to provide a responsive and accessible website to inform users about Pearson College London.',
     info2: 'HTML // CSS // LESS // JavaScript // Adobe Experience Manager.',
     projectinfo: '/work/pearson-college-london',
     url: 'https://www.pearsoncollegelondon.ac.uk/',
