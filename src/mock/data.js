@@ -37,7 +37,7 @@ export const projectsData = [
     dates: '2019 - present',
     info: 'Overhaul of the Pearson College London website and Adobe Experience Manager CMS system, to provide a responsive and accessible website to inform users about Pearson College London.',
     info2: 'HTML // CSS // LESS // JavaScript // Adobe Experience Manager',
-    projectinfo: '/work/pearson-college-london',
+    projectinfo: '',
     url: 'https://www.pearsoncollegelondon.ac.uk/',
     link: 'link',
     github: '',

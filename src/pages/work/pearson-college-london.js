@@ -1,12 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import Header from '../../components/Header/Header';
 import Footer from '../../components/Footer/Footer';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import '../style/main.scss';
 
 import { PortfolioProvider } from '../../context/context';
 
 import { headerData, footerData } from '../../mock/data';
 
-function Test() {
+function pearsonCollegeLondon() {
   const [footer, setFooter] = useState({});
   const [header, setHeader] = useState({});
 
@@ -30,9 +32,9 @@ function Test() {
 </div>
 <div className="pp-img-section">
 <div className="pp-img-container">
-  <img src="/images/pwgen.png" className="pp-img"></img>
-  <img src="/images/pwgen.png" className="pp-img"></img>
-  <img src="/images/pwgen.png" className="pp-img"></img>
+  <img src="" className="pp-img"></img>
+  <img src="" className="pp-img"></img>
+  <img src="" className="pp-img"></img>
 </div>
 </div>
 <div className="pp-info-wrapper">
@@ -41,7 +43,7 @@ function Test() {
     <h3 className="pp-info-title">Links</h3>
     <span className="pp-info-desc">Learn more here.</span>
     <ul className="pp-info-list">
-      <li><a href="https://pearsoncollegelondon.ac.uk">Link</a></li>
+      <li><a href="https://pearsoncollegelondon.ac.uk">Pearson College London site</a></li>
     </ul>
     </div>
     <div className="pp-info-section">
@@ -65,4 +67,4 @@ function Test() {
   );
 }
 
-export default Test;
+export default pearsonCollegeLondon;

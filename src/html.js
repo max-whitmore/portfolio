@@ -28,7 +28,7 @@ export default function HTML({
         <script
   dangerouslySetInnerHTML={{
     __html: `
-    console.log('Plain JavaScript inside Gatsby!');
+    console.log('');
 `
   }}
 />

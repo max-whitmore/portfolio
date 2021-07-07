@@ -42,5 +42,3 @@ window.onload = function() {
   eleHeader = document.getElementById(idOfHeader);
   document.addEventListener('scroll', onScroll, false);
 }
-
-console.log('am i working?')
