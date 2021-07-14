@@ -45,6 +45,21 @@ export const projectsData = [
   },
   {
     id: nanoid(),
+    img: 'portfolio.png',
+    title: 'My portfolio',
+    dates: '',
+    info: 'A simple personal portfolio to showcase projects and development work.',
+    subheading: 'Goal',
+    subheading2: 'Technology',
+    info2: 'HTML // SASS // JavaScript // Gatsby // React // Bootstrap // GraphQL ',
+    projectinfo: '',
+    url: 'https://maxw.dev',
+    link: 'link',
+    github: 'github',
+    repo: 'https://github.com/max-whitmore/portfolio', // if no repo, the button will not show up
+  },
+  {
+    id: nanoid(),
     img: 'password-generator-app.png',
     title: 'Password generator',
     dates: '',
@@ -68,7 +83,7 @@ export const projectsData = [
     subheading2: 'Technology',
     info2: 'HTML // CSS //  JavaScript // Bootstrap // EJS // MongoDB // Express',
     projectinfo: '',
-    url: 'http://short-url-heroku.herokuapp.com/',
+    url: '',
     link: 'link',
     github: 'github',
     repo: 'https://github.com/max-whitmore/shorturl', // if no repo, the button will not show up

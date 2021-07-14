@@ -1,1 +1,1 @@
-⚡️ Portfolio built on Gatsby showcasing work and projects.
+👋 A personal portfolio built on Gatsby showcasing Front End Development work and projects.

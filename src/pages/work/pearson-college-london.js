@@ -1,8 +1,12 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'gatsby';
+import { Helmet } from 'react-helmet';
+import Fade from 'react-reveal/Fade';
 import Header from '../../components/Header/Header';
 import Footer from '../../components/Footer/Footer';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import '../style/main.scss';
+
+import '../../style/main.scss';
+
 
 import { PortfolioProvider } from '../../context/context';
 
