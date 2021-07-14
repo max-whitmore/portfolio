@@ -60,6 +60,21 @@ export const projectsData = [
   },
   {
     id: nanoid(),
+    img: 'brewdog-app.png',
+    title: 'Brewdog Beer Generator',
+    dates: '',
+    info: 'A site built to work with the focus() JavaScript method, as well as handling JSON files in API get requests. This project allowed me to fetch data from the public Punk Beer API and display it in a friendly way',
+    subheading: 'Goal',
+    subheading2: 'Technology',
+    info2: 'HTML // CSS // JavaScript // Use of public APIs',
+    projectinfo: '',
+    url: 'https://max-whitmore.github.io/beer-generator',
+    link: 'link',
+    github: 'github',
+    repo: 'https://github.com/max-whitmore/beer-generator', // if no repo, the button will not show up
+  },
+  {
+    id: nanoid(),
     img: 'password-generator-app.png',
     title: 'Password generator',
     dates: '',
