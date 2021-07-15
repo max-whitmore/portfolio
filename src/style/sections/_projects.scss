@@ -11,8 +11,11 @@
 
     .row {
       margin-bottom: 8rem;
-      @include respond(tab-land) {
+      @include respond(tab-port) {
         margin-bottom: 2rem;
+      }
+      @include respond(tab-land) {
+        margin-bottom: 5rem;
       }
     }
 

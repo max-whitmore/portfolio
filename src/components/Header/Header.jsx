@@ -10,9 +10,10 @@ const Header = () => {
   const [isDesktop, setIsDesktop] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
 
-  return (        
-    <Fade left={isDesktop} bottom={isMobile} duration={100} delay={100} distance="30px">
-    <header className="header navbar-static-bottom" id="header">
+  return (       
+    <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={100} distance="30px">
+ 
+        <header className="header navbar-static-bottom" id="header">
       <Container>
         <div className="header-container">
         <div className="brand">

@@ -60,8 +60,8 @@ export const projectsData = [
   },
   {
     id: nanoid(),
-    img: 'brewdog-app.png',
-    title: 'Brewdog Beer Generator',
+    img: 'brewdog-app.PNG',
+    title: 'Brewdog beer generator',
     dates: '',
     info: 'A site built to work with the focus() JavaScript method, as well as handling JSON files in API get requests. This project allowed me to fetch data from the public Punk Beer API and display it in a friendly way',
     subheading: 'Goal',
