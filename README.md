@@ -1,4 +1,5 @@
-👋 A personal portfolio project 
+# 👋 A personal portfolio project 
+
 A website created to host and display the projects I've worked on to date. Made using this [Gatsby starter](https://www.gatsbyjs.com/starters/cobidev/gatsby-simplefolio/), which I have heavily customised to my needs to help promote myself as a developer.
 
 ## How To Use
