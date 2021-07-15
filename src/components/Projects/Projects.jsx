@@ -41,6 +41,8 @@ const Projects = () => {
               link,
               github,
               repo,
+              privaterepo,
+              code
             } = project;
 
             return (
@@ -73,9 +75,15 @@ const Projects = () => {
                         >Github <i className={`fa fa-${github}`} />
                         </a>
                         )}
+                        {privaterepo && (
+                        <a
+                          rel="noopener noreferrer"
+                          className="project-button private-repo-btn"
+                        >Private repo<i className={`fa fa-${code}`} />
+                        </a>
+                        )}
                         {projectinfo && (
                         <a
-                          target="_blank"
                           rel="noopener noreferrer"
                           className="project-button projectinfo-btn"
                           href={projectinfo || ''}

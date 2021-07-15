@@ -86,10 +86,12 @@
   font-weight: 700;
   flex: auto;
   color: $header-font;
-  h1 {
+  transition: ease-in .2s;
+  h1, a {
     font-size: $default-font-size;
     transition: 1s;
     margin: 0;
+    color: $header-font;
     &:hover {
       font-size: $default-font-size;
       background-image: linear-gradient(

@@ -118,9 +118,26 @@
   }
 }
 
+.private-repo-btn {
+  background-color: $private-grey-bg;
+  cursor: not-allowed;
+  padding: .5rem 1rem;
+  color: $private-grey-text;
+  border-radius: 1rem;
+  box-shadow: 0 .125rem .25rem rgba(0,0,0,.075);
+  transition: .2s;
+  &:hover {
+    color: $private-grey-text;
+    }
+    .fa {
+      color: $private-grey-text !important
+    }
+}
+
 .project-button {
-  margin: 5px;
   border: 1rem;
+  padding: .5rem 0.75rem;
+  margin: .25rem;
   .fa,
   .fas {
     margin-left: 5px;
@@ -151,8 +168,12 @@
 .pp-wrapper{
   display: flex;
   justify-content: center;
-  margin: 0 1rem;
-  min-height: 40vh;
+  margin: 0 8rem;
+  min-height: 50vh;
+  @include respond(tab-land) {
+    margin: 0 2rem;
+    padding-top: 7rem;
+  }
 }
 
 .pp-content {
@@ -166,31 +187,42 @@
 }
 
 .pp-description {
-  text-align: center;
+  text-align: left;
+  max-width: 800px;
 }
 
 .pp-img {
-  width: 50px;
+  width: 100%;
   height: auto;
   box-shadow: 0 .125rem .25rem rgba(0,0,0,.075);
-  padding: 5rem 2rem;
+  background-color: rgb(148, 251, 255);
+}
+
+.pp-img-section {
+  margin-top: 2rem;
 }
 
 .pp-img-container {
   display: flex;
   justify-content: center;
-  flex-direction: column;
+  margin: 0 5rem;
+  border: 5px solid #bbffe3;
+  border-radius: 5px;
+  box-shadow: 0 0 5px -3px;
+  @include respond(tab-port) {
+    margin: 1rem;
+  }
 }
 
 .pp-info-wrapper {
   display: flex;
   justify-content: center;
-  margin: 3rem 2rem;
 }
 
 .pp-info-container {
   display: flex;
   justify-content: center;
+  margin-top: 3rem;
   @include respond(tab-port) {
     flex-direction: column;
   }

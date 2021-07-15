@@ -37,11 +37,13 @@ export const projectsData = [
     dates: '2019 - present',
     info: 'Overhaul of the Pearson College London website and Adobe Experience Manager CMS system, to provide a responsive and accessible website to inform users about Pearson College London.',
     info2: 'HTML // CSS // LESS // JavaScript // Adobe Experience Manager',
-    projectinfo: '',
+    projectinfo: '/work/pearson-college-london',
     url: 'https://www.pearsoncollegelondon.ac.uk/',
     link: 'link',
     github: '',
     repo: '', // if no repo, the button will not show up
+    privaterepo: 'Private',
+    code: 'code',
   },
   {
     id: nanoid(),
@@ -66,7 +68,7 @@ export const projectsData = [
     info: 'A site built to work with the focus() JavaScript method, as well as handling JSON files in API get requests. This project allowed me to fetch data from the public Punk Beer API and display it in a friendly way',
     subheading: 'Goal',
     subheading2: 'Technology',
-    info2: 'HTML // CSS // JavaScript // Use of public APIs',
+    info2: 'HTML // CSS // JavaScript // brewdog punk api',
     projectinfo: '',
     url: 'https://max-whitmore.github.io/beer-generator',
     link: 'link',
@@ -150,14 +152,7 @@ export const pclData = [
   {
     id: nanoid(),
     img: 'project.jpg',
-    title: 'Pearson College London',
-    dates: '2019 - present',
-    info:
-      'Overhaul of the Pearson College London website and Adobe Experience Manager system, to provide a responsive and accessible website to inform users about Pearson College London.',
-    subheading: 'Goal',
-    subheading2: 'Technology',
-    info2: 'HTML, CSS, JavaScript, LESS & Adobe Experience Manager.',
-    url: 'https://www.pearsoncollegelondon.ac.uk/',
-    repo: '', // if no repo, the button will not show up
+    info: 'XXXXXXXXXXXX TEST',
   },
 ];
+

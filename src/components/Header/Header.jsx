@@ -1,6 +1,7 @@
 import React, { useContext, useState } from 'react';
 import { Container } from 'react-bootstrap';
 import Fade from 'react-reveal/Fade';
+import { Link } from 'gatsby';
 import PortfolioContext from '../../context/context';
 
 const Header = () => {
@@ -17,7 +18,9 @@ const Header = () => {
       <Container>
         <div className="header-container">
         <div className="brand">
+          <Link to="/">
           <h1>Max Whitmore</h1>
+          </Link>
         </div>
         <div className="header-social-links">
           {networks &&
