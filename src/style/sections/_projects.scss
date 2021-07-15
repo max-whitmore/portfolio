@@ -96,15 +96,8 @@
   justify-content: flex-end;
 }
 
-.link-btn {
-  padding: .5rem 1rem;
-  color: $black;
-  &:hover {
-    color: $black;
-  }
-}
-
 .github-btn,
+.link-btn,
 .projectinfo-btn {
   background-color: $white;
   padding: .5rem 1rem;
@@ -112,6 +105,9 @@
   border-radius: 1rem;
   box-shadow: 0 .125rem .25rem rgba(0,0,0,.075);
   transition: .2s;
+  @include respond(tab-port) {
+    font-size: .8rem;
+  }
   &:hover {
     box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
     color: $black;
@@ -126,6 +122,9 @@
   border-radius: 1rem;
   box-shadow: 0 .125rem .25rem rgba(0,0,0,.075);
   transition: .2s;
+  @include respond(tab-port) {
+    font-size: .8rem;
+  }
   &:hover {
     color: $private-grey-text;
     }
@@ -142,7 +141,7 @@
   .fas {
     margin-left: 5px;
     color: $black;
-    font-size: 1.5rem;
+    font-size: 1rem;
     line-height: 1.2rem;
     transition: all 0.2s ease-in;
     &:hover {
@@ -154,7 +153,6 @@
 .project-links {
   display: flex;
   justify-content: space-evenly;
-  padding: 10px;
   border-radius: 5px;
 }
 
